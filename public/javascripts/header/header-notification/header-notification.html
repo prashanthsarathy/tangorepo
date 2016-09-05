@@ -1,0 +1,57 @@
+
+
+<ul class="nav navbar-top-links navbar-right">
+  <!-- rohit add -->
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-gears fa-fw"></i><strong> Projects </strong><i class="fa fa-caret-down"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-messages">
+          <li>
+              <a ui-sref="home.createProject" data-rel="popup">
+                  <div>
+                      <h5>Create New Project</h5>
+                  </div>
+              </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+              <a ui-sref="dashboard.project">
+                  <div>
+                      <h5>Project Agile One</h5>
+                  </div>
+
+              </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+              <a ui-sref="dashboard.project">
+                  <div>
+                      <h5>Project Deep-dive</h5>
+                  </div>
+
+              </a>
+          </li>
+      </ul>
+
+  </li>
+
+  <!-- rohit /add -->
+
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-user">
+            <li><a ui-sref="home.editprofile"><i class="fa fa-user fa-fw"></i> User Profile</a>
+            </li>
+
+
+            <li class="divider"></li>
+            <li><a ui-sref="login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+        </ul>
+        <!-- /.dropdown-user -->
+    </li>
+    <!-- /.dropdown -->
+</ul>

@@ -1,0 +1,28 @@
+node-debug ./bin/www
+
+=============OR========================================>>
+
+Get the PID of the node process using your favorite method, e.g.
+
+> 
+tasklist /FI "IMAGENAME eq node.exe"
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+node.exe                      3084 Console                    1     11,964 K
+
+Call the API:
+
+> 
+node -e "process._debugProcess(3084)"
+
+run -
+> 
+node-inspector
+--------------------------------------------------
+
+3. Load the debugger UI
+
+http://127.0.0.1:8080/?port=5858
+in the Chrome browser.
+
